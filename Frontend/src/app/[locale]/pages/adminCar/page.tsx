@@ -4,6 +4,14 @@ import TranslationsProvider from "@/components/TranslationsProvider";
 import AdminCars from "@/app/adminpage/pages/admin_cars/AdminCars";
 
 const i18nNamespaces = ["landingPage"];
+// src/app/[locale]/page.tsx
+export async function generateStaticParams() {
+  return [
+    { locale: 'en' },
+    { locale: 'ar' },
+    // baaki locales
+  ];
+}
 
 const page = async ({ params: { locale } }: any) => {
   const { t, resources } = await initTranslations(locale, i18nNamespaces);

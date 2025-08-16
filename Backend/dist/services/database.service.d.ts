@@ -1,0 +1,28 @@
+import * as mongoDB from 'mongodb';
+export declare const collections: {
+    token?: mongoDB.Collection;
+    users?: mongoDB.Collection;
+    carInquiry?: mongoDB.Collection;
+    carCategory?: mongoDB.Collection;
+    carBrands?: mongoDB.Collection;
+    carData?: mongoDB.Collection;
+    carModel?: mongoDB.Collection;
+    carFeatures?: mongoDB.Collection;
+    addCarServices?: mongoDB.Collection;
+    addCarEngineCapacities?: mongoDB.Collection;
+    addCarDocument?: mongoDB.Collection;
+    addCarLoaction?: mongoDB.Collection;
+    addFAQS?: mongoDB.Collection;
+    driver?: mongoDB.Collection;
+    newList?: mongoDB.Collection;
+    contactInfo?: mongoDB.Collection;
+    tradeLicence?: mongoDB.Collection;
+    corporateVedio?: mongoDB.Collection;
+    addCharges?: mongoDB.Collection;
+    addDeliveryOptions?: mongoDB.Collection;
+    carImages?: mongoDB.Collection;
+    banners?: mongoDB.Collection;
+    settings?: mongoDB.Collection;
+    CarModelNew?: mongoDB.Collection;
+};
+export declare function connectToDatabase(): Promise<void>;

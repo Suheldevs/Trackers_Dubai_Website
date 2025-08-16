@@ -105,15 +105,3 @@ export interface BookingHistory {
     // Other booking details as needed
 }
 
-
-// Indexing
-collections?.carBasicInfo?.createIndex({ name: 1 });
-collections?.carBasicInfo?.createIndex({ brand: 1 });
-collections?.carBasicInfo?.createIndex({ model: 1 });
-collections?.carBasicInfo?.createIndex({ year: 1 });
-collections?.carBasicInfo?.createIndex({ categoryId: 1 });
-collections?.carBasicInfo?.createIndex({ locationId: 1 });
-
-collections?.carPricing?.createIndex({ carId: 1 });
-collections?.carSpecifications?.createIndex({ carId: 1 });
-collections?.carAdditionalDetails?.createIndex({ carId: 1 });

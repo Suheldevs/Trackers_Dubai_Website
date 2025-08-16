@@ -4,7 +4,13 @@ import TermsAndCondition from "@/app/user/termsAndCondition/TermsAndCondition";
 import TranslationsProvider from "@/components/TranslationsProvider";
 
 const i18nNamespaces = ["landingPage"];
-
+export async function generateStaticParams() {
+  return [
+    { locale: "en" },
+    { locale: "ar" },
+    // agar aur locales hain to add karo
+  ];
+}
 const page = async ({ params: { locale } }: any) => {
   const { resources } = await initTranslations(locale, i18nNamespaces);
 

@@ -8,7 +8,7 @@
     "schemas":[
        "http"
     ],
-    "host":"https://api.injazrent.ae",
+    "host":"https://api.tracker.ae",
     "paths":{
        "/user/signUp":{
           "post":{

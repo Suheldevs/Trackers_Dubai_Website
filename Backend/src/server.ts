@@ -36,7 +36,7 @@ log4js.configure({
 const logger = log4js.getLogger('serviceprAdmin');
 
 const corsOptions = {
-  origin: ['*', 'https://injazrent.ae', 'http://localhost:3000', 'http://localhost:3001', 'localhost:3000','https://wwww.injazrent.ae', 'https://dev.injazrent.ae', 'https://www.dev.injazrent.ae'],
+  origin: ['*', 'https://injazrent.ae', 'http://localhost:3000', 'http://localhost:3001', 'localhost:3000','https://wwww.injazrent.ae', 'https://dev.injazrent.ae', 'https://www.dev.injazrent.ae',"https://tracker.ae", "http://localhost:5173/"],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization'],
 }

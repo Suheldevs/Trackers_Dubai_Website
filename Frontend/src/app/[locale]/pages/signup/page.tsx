@@ -3,7 +3,13 @@ import initTranslations from "@/app/i18n";
 import TranslationsProvider from "@/components/TranslationsProvider";
 import SignUp from "@/app/adminpage/signin_signup/signup/SignUp";
 const i18nNamespaces = ["landingPage"];
-
+export async function generateStaticParams() {
+  return [
+    { locale: "en" },
+    { locale: "ar" },
+    // agar aur locales hain to add karo
+  ];
+}
 const page = async ({ params: { locale } }: any) => {
   const { t, resources } = await initTranslations(locale, i18nNamespaces);
   return (

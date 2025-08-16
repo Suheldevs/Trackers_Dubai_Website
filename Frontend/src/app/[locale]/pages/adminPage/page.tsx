@@ -5,7 +5,13 @@ import AdminPageLogic from "@/app/adminpage";
 import AdminHome from "@/app/adminpage/AdminHome";
 
 const i18nNamespaces = ["landingPage"];
-
+export async function generateStaticParams() {
+  return [
+    { locale: "en" },
+    { locale: "ar" },
+    // agar aur locales hain to add karo
+  ];
+}
 const page = async ({ params: { locale } }: any) => {
   const { t, resources } = await initTranslations(locale, i18nNamespaces);
   return (

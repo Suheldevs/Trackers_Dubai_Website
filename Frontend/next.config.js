@@ -5,7 +5,7 @@ const nextConfig = {
         ignoreBuildErrors: true,
         
     },
-    distDir: 'dist',
+    // distDir: 'dist',
     trailingSlash: true,
     images: { unoptimized: true },
     reactStrictMode: false,  
