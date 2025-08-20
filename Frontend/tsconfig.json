@@ -30,15 +30,16 @@
     }
   },
   "include": [
-    "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "src/app/signup/page.tsx",
+    "dist/types/**/*.ts",
+    "next-env.d.ts",
     "src/app/adminpage/pages/car_features/car_feature_from",
+    "src/app/signup/page.tsx",
     "src/utils/dataSetter.js",
     "src/utils/objToFormData.js",
-    "dist/types/**/*.ts"
+    "out/types/**/*.ts"
   ],
   "exclude": [
     "node_modules"
